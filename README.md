@@ -1,8 +1,8 @@
-# 🕳️ Pothole Detection Project
+# Pothole Detection Project
 
 A computer vision-based web application for detecting potholes in road images using deep learning and OpenCV techniques.
 
-## 🚀 Project Overview
+##  Project Overview
 
 This project aims to assist in road safety and maintenance by detecting potholes in uploaded images using multiple models:
 - **ResNet50**
@@ -13,17 +13,17 @@ The app is built using **Flask**, with an easy-to-use web interface and secure u
 
 ---
 
-## 🛠️ Features
+## Features
 
-- 🔍 Pothole detection using state-of-the-art deep learning models
-- 📸 Upload images and view predictions side by side
-- 🔐 Login and Register system using MySQL
-- 📊 Supports both Deep Learning and OpenCV-based detection
-- 💻 Responsive and modern UI with HTML/CSS and JavaScript
+-  Pothole detection using state-of-the-art deep learning models
+-  Upload images and view predictions side by side
+-  Login and Register system using MySQL
+-  Supports both Deep Learning and OpenCV-based detection
+-  Responsive and modern UI with HTML/CSS and JavaScript
 
 ---
 
-## 🧠 Models Used
+##  Models Used
 
 | Model     | Description |
 |-----------|-------------|
@@ -34,7 +34,7 @@ The app is built using **Flask**, with an easy-to-use web interface and secure u
 
 ---
 
-## 🔧 Tech Stack
+##  Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Flask (Python)
@@ -44,7 +44,7 @@ The app is built using **Flask**, with an easy-to-use web interface and secure u
 
 ---
 
-## 🗂️ Folder Structure
+##  Folder Structure
 project/
 │
 ├── static/ # CSS, JS, images
@@ -57,7 +57,7 @@ project/
 └── README.md
 ---
 
-## 🧪 How to Run the Project
+##  How to Run the Project
 
 1.Clone the repository
    
