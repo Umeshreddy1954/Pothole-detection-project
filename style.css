@@ -1,0 +1,251 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1f1f2f;
+  padding: 12px 20px;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.nav-left .brand {
+  font-size: 1.4rem;
+  color: #66ccff;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-link {
+  color: #eaeaea;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #66ccff;
+}
+
+.logout-btn {
+  background-color: #f06292;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.opencv-btn{
+  background-color: #f06292;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.auth-card {
+  max-width: 400px;
+  margin: 100px auto;
+  background: #1f1f2f;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(102, 204, 255, 0.2);
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background: #2c2c3c;
+  color: #fff;
+}
+
+.auth-card button {
+  width: 100%;
+  background-color: #8257e5;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.toggle-auth span {
+  color: #66ccff;
+  cursor: pointer;
+}
+
+.auth-msg {
+  margin-top: 10px;
+  color: red;
+}
+
+.upload-predict-container {
+  text-align: center;
+  margin: 30px auto;
+}
+
+#upload-form input[type="file"] {
+  padding: 10px;
+  background: #2c2c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#upload-form button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #7b2cbf;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.results-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.result-card {
+  background-color: #1e1e2e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(102, 204, 255, 0.15);
+  width: 300px;
+}
+
+.result-card img {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 18, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #333;
+  border-top: 6px solid #66ccff;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.slide-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  padding: 30px 20px;
+}
+
+.slide-card {
+  background-color: #1e1e2e;
+  color: #eaeaea;
+  padding: 40px;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(102, 204, 255, 0.15);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.slide-card:hover {
+  transform: scale(1.01);
+}
+
+.slide-card h1 {
+  color: #66ccff;
+  margin-bottom: 20px;
+}
+
+.slide-card ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.slide-card ul li {
+  margin: 8px 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.nav-link.active {
+  color: #66ccff;
+  border-bottom: 2px solid #66ccff;
+  padding-bottom: 4px;
+}
+/* Home Section */
+.home-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 30px;
+  text-align: center;
+  background: #1f1f2f;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(102, 204, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 40px rgba(102, 204, 255, 0.2);
+}
+
+.home-title {
+  font-size: 2.8rem;
+  color: #66ccff;
+  margin-bottom: 25px;
+  text-shadow: 0 0 12px rgba(102, 204, 255, 0.3);
+}
+
+.home-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  color: #dcdcdc;
+}
+
+.home-container strong {
+  color: #ffffff;
+}
+
+.highlight {
+  color: #00ffff;
+  font-weight: 600;
+}
